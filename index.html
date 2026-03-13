@@ -1,0 +1,345 @@
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KoloNove | Tecnologia e Inovação</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6fb;
+}
+
+/* MENU */
+
+header{
+background:#0b2c5f;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+.logo img{
+height:65px;
+width:auto;
+display:block;
+}
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(120deg,#0b2c5f,#1f6ed4);
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.btn{
+background:#ff7a00;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+/* SERVICOS */
+
+.servicos{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:250px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.portfolio img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* EQUIPA */
+
+.team{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.member{
+background:white;
+padding:20px;
+border-radius:10px;
+width:220px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.member img{
+width:100%;
+border-radius:50%;
+}
+
+/* CLIENTES */
+
+.clients{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+justify-content:center;
+align-items:center;
+}
+
+.clients img{
+height:60px;
+opacity:0.8;
+}
+
+/* CONTACTO */
+
+form{
+max-width:500px;
+margin:auto;
+text-align:left;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+background:#ff7a00;
+border:none;
+padding:12px 20px;
+color:white;
+margin-top:10px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+background:#0b2c5f;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png" alt="Logo KoloNove">
+</div>
+
+<nav>
+<a href="#">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#portfolio">Portfólio</a>
+<a href="#equipa">Equipa</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+<section class="hero">
+
+<h1>KoloNove</h1>
+<p>Soluções tecnológicas e inovação digital</p>
+
+<a class="btn" href="#servicos">Conheça os Serviços</a>
+
+</section>
+
+<section id="servicos">
+
+<div class="container">
+
+<h2>Serviços</h2>
+
+<div class="servicos">
+
+<div class="card">
+<h3>Design Gráfico</h3>
+<p>Criação de logotipos e identidade visual.</p>
+</div>
+
+<div class="card">
+<h3>Desenvolvimento Web</h3>
+<p>Websites profissionais e modernos.</p>
+</div>
+
+<div class="card">
+<h3>Marketing Digital</h3>
+<p>Promoção de empresas na internet.</p>
+</div>
+
+<div class="card">
+<h3>Consultoria Tecnológica</h3>
+<p>Soluções digitais para negócios.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<div class="container">
+
+<h2>Portfólio</h2>
+
+<div class="portfolio">
+
+<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="equipa">
+
+<div class="container">
+
+<h2>Nossa Equipa</h2>
+
+<div class="team">
+
+<div class="member">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<h3>Diretor</h3>
+<p>Gestão e estratégia</p>
+</div>
+
+<div class="member">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<h3>Designer</h3>
+<p>Design gráfico</p>
+</div>
+
+<div class="member">
+<img src="https://randomuser.me/api/portraits/men/52.jpg">
+<h3>Programador</h3>
+<p>Desenvolvimento web</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Clientes & Parceiros</h2>
+
+<div class="clients">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<div class="container">
+
+<h2>Contacto</h2>
+
+<form>
+
+<label>Nome</label>
+<input type="text">
+
+<label>Email</label>
+<input type="email">
+
+<label>Mensagem</label>
+<textarea rows="5"></textarea>
+
+<button>Enviar</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 KoloNove | Tecnologia e Inovação</p>
+
+</footer>
+
+</body>
+</html>
+```
